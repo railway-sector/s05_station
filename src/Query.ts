@@ -54,7 +54,7 @@ export async function dateUpdate() {
   });
 }
 
-export const station_names = ["San Pedro", "Pacita", "Binan", "Sta Rosa"];
+export const station_names = ["San Pedro", "Pacita", "Binan", "Santa Rosa"];
 
 export const stationValues = [
   {
