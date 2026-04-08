@@ -71,7 +71,7 @@ export const stationValues = [
   },
   {
     station: station_names[3],
-    value: 25,
+    value: 26,
   },
 ];
 
