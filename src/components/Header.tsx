@@ -4,6 +4,8 @@ import { dateUpdate } from "../Query";
 import StationSegmentedList from "./StationSegmentedList";
 
 function Header() {
+  const primaryLabelColor = "#d1d5db";
+
   const [asOfDate, setAsOfDate] = useState(null);
   useEffect(() => {
     dateUpdate().then((response) => {
@@ -40,7 +42,15 @@ function Header() {
           }}
         />
         <b className="headerTitle">S-05 Station Structure</b>
-        <div className="date">{!asOfDate ? "" : "As of " + asOfDate}</div>
+        <div
+          style={{
+            color: primaryLabelColor,
+            marginTop: "auto",
+            marginLeft: "auto",
+          }}
+        >
+          {!asOfDate ? "" : "As of " + asOfDate}
+        </div>
 
         {/* Segmented List component */}
         <div
